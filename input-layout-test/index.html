@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<form action="#">
+			<div class="form-wrapper">
+				<div class="form-name">
+					<label for="first-name">
+						<input
+							type="text"
+							placeholder="Имя"
+							id="first-name"
+							maxlength="15"
+							required
+						/>
+					</label>
+					<label for="last-name">
+						<input
+							type="text"
+							placeholder="Фамилия"
+							id="last-name"
+							maxlength="15"
+							required
+						/>
+					</label>
+				</div>
+
+				<label for="email">
+					<input type="email" placeholder="Email" id="email" required />
+				</label>
+
+				<div class="form-passwords">
+					<label for="password">
+						<input
+							type="password"
+							placeholder="Пароль"
+							id="password"
+							minlength="8"
+							maxlength="20"
+							required
+						/>
+					</label>
+					<label for="password-confirm">
+						<input
+							type="password"
+							placeholder="Подтверждение пароля"
+							id="password-confirm"
+							minlength="8"
+							maxlength="20"
+							required
+						/>
+					</label>
+				</div>
+				<div class="form-birth-day">
+					<label for="birth-day">
+						<input type="date" placeholder="Дата рождения" id="birth-day" />
+					</label>
+				</div>
+				<div class="btn-wrapper">
+					<button type="submit" id="form-button" class="disabled">
+						Отправить
+					</button>
+				</div>
+			</div>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>

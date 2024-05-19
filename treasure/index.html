@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Найди клад!</title>
+	</head>
+	<body style="display: flex; flex-direction: column; align-items: center">
+		<h1 style="margin-bottom: 10px" id="heading">Найди клад!</h1>
+
+		<div class="wrapper" style="position: relative">
+			<img
+				id="map"
+				width="800"
+				height="800"
+				src="http://nostarch.com/images/treasuremap.png"
+			/>
+		</div>
+		<p
+			style="font-size: 24px; font-weight: 700; margin-top: 15px"
+			id="distance"
+		></p>
+		<div></div>
+		<script>
+			// Task 1 - увеличить размер поля - completed
+			// Task 2 - добавить больше подсказок - completed
+			// Task 3 - ограничение по кликам с помощью alert('КОНЕЦ ИГРЫ') - completed
+			// Task 4 - когда будет горячо или холодно, alert(кол-во кликов скок осталось) - completed
+			// Task 5 - чит - добавить для себя отметку где находится клад - completed
+
+			const getRandomNumber = function (size) {
+				return Math.floor(Math.random() * size)
+			}
+
+			const h1Elem = document.getElementById('heading')
+			const width = 800
+			const height = 800
+
+			const target = {
+				x: getRandomNumber(width),
+				y: getRandomNumber(height),
+			}
+
+			const mapElem = document.getElementById('map')
+			let clicks = 0
+			const wrapper = document.querySelector('.wrapper')
+			const cheat = prompt('Включить читы?:', 'нет')
+
+			const marker = document.createElement('div')
+
+			marker.style.position = 'absolute'
+			marker.style.left = `${target.x}px`
+			marker.style.top = `${target.y}px`
+			marker.style.backgroundColor = 'white'
+			marker.style.borderRadius = '50%'
+			marker.style.width = '6px'
+			marker.style.height = '6px'
+			marker.style.zIndex = 100
+
+			if (cheat === 'да') {
+				wrapper.appendChild(marker)
+			}
+
+			mapElem.addEventListener('click', function (event) {
+				clicks++
+
+				const distance = getDistance(event, target)
+				const distanceHint = getDistanceHint(distance)
+				const pElem = document.getElementById('distance')
+
+				pElem.innerHTML = distanceHint
+
+				if (clicks === 20) {
+					alert('КОНЕЦ ИГРЫ')
+					h1Elem.innerHTML = 'Вы не прошли игру!'
+					mapElem.remove()
+					pElem.innerHTML = 'Игра окончена, клад вы не нашли!'
+				}
+
+				if (distance < 8) {
+					alert('Клад найден! Сделано кликов: ' + clicks)
+
+					h1Elem.innerHTML = 'Вы прошли игру!'
+					mapElem.remove()
+					pElem.innerHTML = 'Игра окончена, вы нашли клад!'
+				}
+
+				if (distance < 40) alert('Осталось ' + (20 - clicks) + ' кликов')
+				else if (distance < 160) alert('Осталось ' + (20 - clicks) + ' кликов')
+			})
+
+			const getDistance = function (event, target) {
+				let diffX = event.offsetX - target.x
+				let diffY = event.offsetY - target.y
+				const diff = Math.sqrt(diffX * diffX + diffY * diffY)
+				return diff
+			}
+
+			const getDistanceHint = function (distance) {
+				if (distance < 10) return 'Обожжешься!'
+				else if (distance < 15) return 'Очень-очень горячо'
+				else if (distance < 20) return 'Очень горячо'
+				else if (distance < 40) return 'Горячо'
+				else if (distance < 80) return 'Тепло'
+				else if (distance < 160) return 'Холодно'
+				else if (distance < 320) return 'Очень холодно'
+				else if (distance < 460) return 'Очень-очень холодно'
+				else return 'Замерзнешь!'
+			}
+		</script>
+	</body>
+</html>

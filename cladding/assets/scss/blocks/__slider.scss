@@ -1,0 +1,23 @@
+.slider {
+	margin-bottom: 34px;
+}
+
+.arrow-slider {
+	display: flex;
+	justify-content: center;
+
+	gap: 68px;
+}
+
+.slider-nav {
+	align-items: center;
+	display: flex;
+	gap: 17px;
+}
+
+.arrow-cursor {
+	cursor: pointer;
+	&:hover {
+		opacity: 0.8;
+	}
+}

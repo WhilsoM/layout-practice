@@ -1,0 +1,54 @@
+.advantages {
+	margin-bottom: 60px;
+	.introduction {
+		max-width: 620px;
+
+		.introduction__title {
+			color: var(--accent-color);
+			font-size: 40px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		.introduction__desc {
+			color: var(--accent-color_light);
+			font-size: 18px;
+			line-height: 140%;
+			margin-bottom: 40px;
+		}
+	}
+
+	.cards-about-us {
+		display: grid;
+		grid-template-columns: repeat(15, 1fr);
+	}
+
+	.card {
+		grid-column: 3 span;
+		padding-right: 15px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+
+		border-radius: 24px;
+		background: #f4faff;
+		width: 230px;
+		height: 182px;
+
+		img {
+			margin-top: 30px;
+			margin-left: 35px;
+			padding: 10px;
+			border-radius: 50%;
+			background-color: var(--sky-blue);
+			margin-bottom: 10px;
+		}
+
+		.card__caption {
+			margin-left: 35px;
+			color: var(--accent-color);
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 140%;
+		}
+	}
+}

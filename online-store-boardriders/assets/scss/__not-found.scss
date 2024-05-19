@@ -1,0 +1,28 @@
+.main.not-found-section {
+	margin: 0 auto;
+}
+
+.not-found-page {
+	.container {
+		display: flex;
+		align-items: center;
+	}
+
+	margin-top: 200px;
+	margin-bottom: 200px;
+	.not-found {
+		margin-right: 50px;
+	}
+	.not-found-page__title {
+		font-size: 90px;
+		font-weight: 700;
+	}
+
+	.not-found-info {
+		max-width: 600px;
+	}
+	.not-found-info-text {
+		font-size: 20px;
+		font-weight: 500;
+	}
+}

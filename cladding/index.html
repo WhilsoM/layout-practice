@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cladding</title>
+		<link rel="stylesheet" href="./assets/style/reset/reset.css" />
+		<link rel="stylesheet" href="./assets/style/main.css" />
+		<link rel="stylesheet" href="./assets/style/animate.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header__logo wow bounceInLeft">
+					<span class="header__title">LOGO</span>
+				</div>
+				<nav aria-labelledby="">
+					<ul class="nav">
+						<li class="nav-list">
+							<a href="#" class="list-item about">О нас</a>
+						</li>
+						<li class="nav-list">
+							<a href="#" class="list-item product">Продукция</a>
+						</li>
+						<li class="nav-list">
+							<a href="#" class="list-item contact">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="header__call"><span>Связаться сейчас</span></div>
+			</div>
+			<section class="solutions">
+				<div class="container">
+					<div class="info">
+						<h2 class="wow bounceInUp">
+							Лучшие решения для облицовки вашего дома!
+						</h2>
+						<p>10 лет на рынке!</p>
+						<button class="btn btn-product">Посмотреть каталог</button>
+					</div>
+					<!-- Пометка: ph - placeholder -->
+					<form class="wow bounceInLeft form__solutions">
+						<div class="form__wrapper">
+							<h3>Оставьте вашу заявку</h3>
+							<p class="desc__form">Заполните форму и мы перезвоним!</p>
+							<label for="GET-name"></label>
+							<input
+								class="input-form input-form-ph"
+								id="GET-name"
+								type="text"
+								name="name"
+								placeholder="Ваше имя"
+							/>
+							<label for="GET-phone"></label>
+							<input
+								class="input-form input-form-ph"
+								id="GET-phone"
+								type="tel"
+								name="phone"
+								placeholder="Ваш номер телефона"
+							/>
+
+							<button class="form-btn" type="button" onclick="submitForm()">
+								Отправить
+							</button>
+							<img src="./assets/img/arrow-white.svg" alt="arrow-white" />
+							<!-- Модальное окно -->
+							<div id="overlay"></div>
+							<div id="modal">
+								<div class="modal__wrapper">
+									<p>Ваш запрос успешно отправлен!</p>
+									<button onclick="closeModal()">Закрыть</button>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<img
+						class="arrow-down"
+						src="./assets/img/arrow-down.svg"
+						alt="arrow-down"
+					/>
+				</div>
+			</section>
+		</header>
+
+		<section class="about-us">
+			<div class="container">
+				<div class="text__about-us">
+					<h2 class="title__about-us">О НАС</h2>
+					<p class="subtitle__about-us">10 лет на рынке</p>
+					<p class="description__about-us">
+						Если Вы хотите купить облицовочный кирпич в Актобе, тогда Вы
+						обратились точно по адресу. У нас есть кирпич различного цвета и
+						размера. Мы на рынке облицовочного кирпича более 10 лет! Мы - прямые
+						поставщики Украинского завода "ЕВРОТОН", "Белая Церковь" и также
+						поставщики ведущих Российских кирпичных заводов таких как "ТМ
+						Ликолор", "НЗКМ кирпичный завод", "Копыловская керамика", "Брянский
+						кирпичный завод", "КЗ Красная Гвардия".Наша команда - это молодые
+						современные лица, которые помогут подобрать оптимальный дизайн,
+						выполнят полный подсчет кирпича от и до.
+					</p>
+
+					<span class="price-quality"
+						>Подберем кирпич для Вашего дома в соответствии
+						ЦЕНА=КАЧЕСТВО!!</span
+					>
+				</div>
+				<div class="assort__about-us">
+					<p class="desc__about-us">Широкий ассортимент, сотни клиентов!</p>
+					<!-- video -->
+					<iframe
+						width="500"
+						height="313"
+						src="https://www.youtube.com/embed/nDc7VZ0cLK8?si=_mp8jK_qTFTpznMM"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section class="products">
+			<div class="container">
+				<h2 class="title__products">ПРОДУКЦИЯ</h2>
+				<div class="line-elem">
+					<span class="elem__line-elem">ТК Ликолор</span>
+					<span class="elem__line-elem">Тайга</span>
+					<span class="elem__line-elem">Копылово</span>
+					<span class="elem__line-elem">5 элемент</span>
+				</div>
+				<div class="cards">
+					<div class="card">
+						<div class="bg__card">
+							<img src="./assets/img/products/brick1.webp" alt="brick" />
+						</div>
+						<h3 class="title__card">Black Premium (Одинарный, 1-НФ)</h3>
+						<p class="description__card">
+							<span>Размер: 250х120х65</span>
+							<span>Количество в упаковке: 480 шт</span>
+						</p>
+						<a class="link__card" href="#">Узнать больше</a>
+						<img src="./assets/img/arrow-yellow.svg" alt="arrow-yellow" />
+					</div>
+
+					<div class="card">
+						<div class="bg__card">
+							<img src="./assets/img/products/brick2.webp" alt="brick" />
+						</div>
+						<h3 class="title__card">Black Premium (Одинарный, 1-НФ)</h3>
+						<p class="description__card">
+							<span>Размер: 250х120х65</span>
+							<span>Количество в упаковке: 480 шт</span>
+						</p>
+						<a class="link__card" href="#">Узнать больше</a>
+						<img src="./assets/img/arrow-yellow.svg" alt="arrow-yellow" />
+					</div>
+					<div class="card">
+						<div class="bg__card">
+							<img src="./assets/img/products/brick3.webp" alt="brick" />
+						</div>
+						<h3 class="title__card">Black Premium (Одинарный, 1-НФ)</h3>
+						<p class="description__card">
+							<span>Размер: 250х120х65</span>
+							<span>Количество в упаковке: 480 шт</span>
+						</p>
+						<a class="link__card" href="#">Узнать больше</a>
+						<img src="./assets/img/arrow-yellow.svg" alt="arrow-yellow" />
+					</div>
+					<div class="card">
+						<div class="bg__card">
+							<img src="./assets/img/products/brick4.webp" alt="brick" />
+						</div>
+						<h3 class="title__card">Black Premium (Одинарный, 1-НФ)</h3>
+						<p class="description__card">
+							<span>Размер: 250х120х65</span>
+							<span>Количество в упаковке: 480 шт</span>
+						</p>
+						<a class="link__card" href="#">Узнать больше</a>
+						<img src="./assets/img/arrow-yellow.svg" alt="arrow-yellow" />
+					</div>
+					<div class="card">
+						<div class="bg__card">
+							<img src="./assets/img/products/brick1.webp" alt="brick" />
+						</div>
+						<h3 class="title__card">Black Premium (Одинарный, 1-НФ)</h3>
+						<p class="description__card">
+							<span>Размер: 250х120х65</span>
+							<span>Количество в упаковке: 480 шт</span>
+						</p>
+						<a class="link__card" href="#">Узнать больше</a>
+						<img src="./assets/img/arrow-yellow.svg" alt="arrow-yellow" />
+					</div>
+					<div class="card">
+						<div class="bg__card">
+							<img src="./assets/img/products/brick2.webp" alt="brick" />
+						</div>
+						<h3 class="title__card">Black Premium (Одинарный, 1-НФ)</h3>
+						<p class="description__card">
+							<span>Размер: 250х120х65</span>
+							<span>Количество в упаковке: 480 шт</span>
+						</p>
+						<a class="link__card" href="#">Узнать больше</a>
+						<img src="./assets/img/arrow-yellow.svg" alt="arrow-yellow" />
+					</div>
+					<div class="card">
+						<div class="bg__card">
+							<img src="./assets/img/products/brick3.webp" alt="brick" />
+						</div>
+						<h3 class="title__card">Black Premium (Одинарный, 1-НФ)</h3>
+						<p class="description__card">
+							<span>Размер: 250х120х65</span>
+							<span>Количество в упаковке: 480 шт</span>
+						</p>
+						<a class="link__card" href="#">Узнать больше</a>
+						<img src="./assets/img/arrow-yellow.svg" alt="arrow-yellow" />
+					</div>
+					<div class="card">
+						<div class="bg__card">
+							<img src="./assets/img/products/brick4.webp" alt="brick" />
+						</div>
+						<h3 class="title__card">Black Premium (Одинарный, 1-НФ)</h3>
+						<p class="description__card">
+							<span>Размер: 250х120х65</span>
+							<span>Количество в упаковке: 480 шт</span>
+						</p>
+						<a class="link__card" href="#">Узнать больше</a>
+						<img src="./assets/img/arrow-yellow.svg" alt="arrow-yellow" />
+					</div>
+				</div>
+				<div class="price-list">
+					<button class="btn">Скачать прайс-лист</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="our-works">
+			<div class="container">
+				<div class="block-title">
+					<h2 class="title__our-works">НАШИ РАБОТЫ</h2>
+					<div class="border-bottom"></div>
+				</div>
+
+				<img src="assets/img/slider/slider-car.webp" alt="car" />
+			</div>
+		</section>
+
+		<section class="also-form">
+			<div class="container">
+				<div class="form-wrapper">
+					<form class="wow bounceInLeft form-also" data-wow-delay=".5s">
+						<h2 class="title__also-form">Оставьте вашу заявку</h2>
+						<p class="description__also-form">
+							Заполните форму и мы перезвоним вам для консультации
+						</p>
+
+						<label for="GET-name"></label>
+						<input
+							class="input-form input-form-also"
+							id="GET-name"
+							type="text"
+							name="name"
+							placeholder="Ваше имя"
+						/>
+						<label for="GET-phone"></label>
+						<input
+							style="margin-bottom: 15px"
+							class="input-form input-form-also"
+							id="GET-phone"
+							type="tel"
+							name="phone"
+							placeholder="Ваш номер телефона"
+						/>
+						<textarea
+							name="comment"
+							id="form-textarea"
+							cols="30"
+							rows="10"
+							placeholder="Дополнительный комментарий"
+						></textarea>
+						<div class="block-btn">
+							<button
+								class="form-btn btn__form-also"
+								type="button"
+								onclick="submitForm()"
+							>
+								Отправить
+							</button>
+							<img
+								class="arrow-black"
+								src="./assets/img/arrow-black.svg"
+								alt="arrow-black"
+							/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-wrapper">
+					<div class="footer-nav">
+						<h3 class="footer-title">Навигация</h3>
+						<nav aria-label="">
+							<ul class="nav">
+								<li class="nav-list">
+									<a href="#" class="list-item about">О нас</a>
+								</li>
+								<li class="nav-list">
+									<a href="#" class="list-item product">Продукция</a>
+								</li>
+								<li class="nav-list">
+									<a href="#" class="list-item contact">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="contacts">
+						<h3>Контакты</h3>
+						<div class="contacts-call">
+							<span class="footer-call">+7 705 392 61 45</span>
+							<span class="footer-call">+7 707 777 75 85</span>
+						</div>
+						<div class="address">
+							<h3>Адрес</h3>
+							<div class="address-spans">
+								<span class="location">г. Актобе, 41 разъезд, товарный</span>
+								<span class="address-span-pl">двор 602А, офис 3</span>
+							</div>
+						</div>
+					</div>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.182734093216!2d37.61211977712873!3d55.75532779179628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a99b88319%3A0xa6f74b23561c1065!2z0JzQsNC90LXQttC90LDRjyDQv9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1703429927755!5m2!1sru!2sru"
+						width="510"
+						height="250"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+				<div class="border"></div>
+				<h3 class="footer-title-footer">Разработано Best Solutions</h3>
+			</div>
+		</footer>
+
+		<script src="./assets/script/script.js"></script>
+		<script src="./assets/script/slider.js"></script>
+		<script src="./assets/script/animate/wow.min.js"></script>
+		<script>
+			new WOW().init()
+		</script>
+	</body>
+</html>

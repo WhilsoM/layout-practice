@@ -1,0 +1,49 @@
+header > .container {
+	padding: 19px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 170px;
+}
+header {
+	background-image: url('../img/header/bg.webp');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 65px;
+	@media (min-resolution: 2dppx) {
+		background-image: url('../img/header/bg@2x.webp');
+	}
+}
+
+.header__title {
+	color: #fff;
+	font-family: var(--font-inter);
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.nav {
+	display: flex;
+	gap: 65px;
+
+	.list-item {
+		color: #fff;
+		font-family: var(--font-inter);
+		font-size: 16px;
+		font-weight: 500;
+		text-decoration: none;
+	}
+}
+
+.header__call > span {
+	color: #fff;
+	font-family: var(--font-montserrat);
+	font-size: 16px;
+	font-weight: 600;
+	align-items: center;
+	display: flex;
+	gap: 10px;
+	&::before {
+		content: url('../img/header/phone-call.svg');
+	}
+}

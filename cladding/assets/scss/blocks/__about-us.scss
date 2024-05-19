@@ -1,0 +1,49 @@
+.about-us {
+	padding-left: 34px;
+	padding-bottom: 92px;
+}
+.about-us .container {
+	display: flex;
+	justify-content: space-between;
+}
+.text__about-us {
+	padding-right: 54px;
+}
+.title__about-us {
+	margin-bottom: 35px;
+	padding-bottom: 22px;
+	border-bottom: 1px solid var(--accent-color);
+	width: 101px;
+	color: var(--accent-color);
+	font-family: var(--font-montserrat);
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0.32px;
+}
+.subtitle__about-us {
+	color: #000;
+	font-family: var(--font-montserrat);
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 35px;
+}
+.description__about-us {
+	color: #000;
+	font-family: var(--font-montserrat);
+	font-size: 14px;
+	max-width: 518px;
+	margin-bottom: 15px;
+}
+.price-quality {
+	max-width: 380px;
+	color: #000;
+	font-family: var(--font-montserrat);
+}
+
+.desc__about-us {
+	color: rgba(0, 0, 0, 0.5);
+	font-family: var(--font-montserrat);
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}

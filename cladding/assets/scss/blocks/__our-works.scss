@@ -1,0 +1,29 @@
+.our-works {
+	padding-left: 34px;
+	margin-bottom: 76px;
+
+	img {
+		margin-right: 20px;
+	}
+
+	.color-table {
+		margin-bottom: 34px;
+	}
+}
+
+.block-title {
+	margin-bottom: 34px;
+}
+.title__our-works {
+	color: var(--accent-color);
+	font-family: var(--font-montserrat);
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0.32px;
+	padding-bottom: 22px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid var(--accent-color);
+	width: 101px;
+}

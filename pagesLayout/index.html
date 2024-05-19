@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pages</title>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/animate.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="logo-socials">
+						<div class="logo">
+							<a href="#!">
+								<img src="assets/img/logo.svg" alt="logo" />
+							</a>
+						</div>
+
+						<div class="socials">
+							<a href="#!" class="socials__link">
+								<img src="assets/img/facebook.svg" alt="facebook" />
+							</a>
+							<a href="#" class="socials__link">
+								<img src="assets/img/twitter.svg" alt="twitter" />
+							</a>
+							<a href="#" class="socials__link">
+								<img src="assets/img/linkedIn.svg" alt="linkedIn" />
+							</a>
+						</div>
+					</div>
+
+					<nav>
+						<ul class="nav-list">
+							<li class="nav-list__item"><a href="#!">Home</a></li>
+							<li class="nav-list__item">
+								<a href="#!"
+									>Pages
+									<img
+										class="arrow-down"
+										src="assets/img/arrow-down.svg"
+										alt="arrow-down"
+									/>
+								</a>
+							</li>
+							<li class="nav-list__item"><a href="#!">About</a></li>
+							<li class="nav-list__item"><a href="#!">Services</a></li>
+							<li class="nav-list__item"><a href="#!">Contact</a></li>
+							<li class="nav-list__item--cart">
+								<button>
+									<img src="assets/img/cart.svg" alt="cart" />
+									<div class="circle"><span>0</span></div>
+								</button>
+							</li>
+							<li class="nav-list__item--btn">
+								<button class="btn" id="popup__btn">Order Today</button>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- бургер меню -->
+					<div class="burger">
+						<span></span>
+					</div>
+					<div class="popup">
+						<div class="popup__wrapper">
+							<p>You have successfully purchased the goods</p>
+							<button class="popup__close">Close</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="header__hero">
+						<p class="hero__rubrication">Welcome to Pages</p>
+						<h1 class="hero__title">
+							<span>Books are uniquely</span> <span>portable magic</span>
+						</h1>
+						<p class="hero__subtitle">
+							There are many variations of passages of Lorem Ipsum available,
+							but the majority have suffered alteration in some form.
+						</p>
+
+						<div class="hero__action">
+							<button class="btn">Order Today</button>
+							<a href="#!">Read Free Demo</a>
+						</div>
+
+						<div class="hero__info">
+							<div class="hero__info-text">
+								<div class="info-text__wrapper">
+									<div class="circle"></div>
+									<p class="info-text__title">Pages:</p>
+								</div>
+								<p class="info-text__text">586pages</p>
+							</div>
+							<div class="hero__info-text">
+								<div class="info-text__wrapper">
+									<div class="circle"></div>
+									<p class="info-text__title">Length:</p>
+								</div>
+								<p class="info-text__text">10 Hours</p>
+							</div>
+							<div class="hero__info-text">
+								<div class="info-text__wrapper">
+									<div class="circle"></div>
+									<p class="info-text__title">Ratings:</p>
+								</div>
+								<p class="info-text__text">4.5/5 (305 ratings)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__book">
+						<img src="assets/img/header-book.png" alt="book" />
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<section class="authors-books">
+					<div class="container">
+						<div class="authors-books__wrapper">
+							<h2 class="authors-books__title section__title wow bounceInLeft">
+								Author’s Book Includes
+							</h2>
+
+							<div class="book-cards">
+								<div class="book-card">
+									<div
+										class="book-card__img wow bounceInLeft"
+										data-wow-delay="0.5s"
+									>
+										<img src="assets/img/book2.png" alt="book" />
+									</div>
+
+									<div
+										class="book-card__wrapper wow bounceInLeft"
+										data-wow-delay="1s"
+									>
+										<h3 class="book-card__title">Atomic One’s</h3>
+										<p class="book-card__subtitle">
+											Many variations of passages of Lorem Ipsum willing araise
+											alteration in some form.
+										</p>
+
+										<div class="book-card-about-book">
+											<div class="about-book__info-text">
+												<div class="about-book__wrapper">
+													<div class="circle"></div>
+													<p class="about-book__title">Pages:</p>
+												</div>
+												<p class="about-book__text">586pages</p>
+											</div>
+
+											<div class="about-book-info-text">
+												<div class="about-book__wrapper">
+													<div class="circle"></div>
+													<p class="about-book__title">Length:</p>
+												</div>
+												<p class="about-book__text">10 Hours</p>
+											</div>
+										</div>
+
+										<button class="btn book-card__btn">Order Today</button>
+									</div>
+								</div>
+
+								<div class="book-card">
+									<div
+										class="book-card__img wow bounceInRight"
+										data-wow-delay="0.5s"
+									>
+										<img src="assets/img/book1.png" alt="book" />
+									</div>
+
+									<div
+										class="book-card__wrapper wow bounceInRight"
+										data-wow-delay="1s"
+									>
+										<h3 class="book-card__title">The Dark Light</h3>
+										<p class="book-card__subtitle">
+											Many variations of passages of Lorem Ipsum willing araise
+											alteration in some form.
+										</p>
+
+										<div class="book-card-about-book">
+											<div class="about-book-info-text">
+												<div class="about-book__wrapper">
+													<div class="circle"></div>
+													<p class="about-book__title">Pages:</p>
+												</div>
+												<p class="about-book__text">586pages</p>
+											</div>
+
+											<div class="about-book__info-text">
+												<div class="about-book__wrapper">
+													<div class="circle"></div>
+													<p class="about-book__title">Length:</p>
+												</div>
+												<p class="about-book__text">10 Hours</p>
+											</div>
+										</div>
+
+										<button class="btn book-card__btn">Order Today</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="about-author">
+					<div class="container">
+						<div class="about-author__wrapper">
+							<div class="author-wrapper__img">
+								<img src="assets/img/about-author.png" alt="about-author" />
+							</div>
+
+							<div class="author-wrapper__info">
+								<h2
+									class="author-wrapper__title section__title wow bounceInLeft"
+								>
+									About Author
+								</h2>
+								<div class="border"></div>
+								<p class="author-wrapper__subtitle">
+									All the Lorem Ipsum generators on the Internet tend to
+									repeated predefined chunks as necessary, making this the first
+									true value generator on the Internet. It uses a dictionary of
+									over 200 Latin words, combined with a handful.
+								</p>
+
+								<div class="info__wrapper">
+									<div class="info-wrapper__block">
+										<p>02</p>
+										<p>Books Published</p>
+									</div>
+									<div class="info-wrapper__block">
+										<p>4.5</p>
+										<p>User Reviews</p>
+									</div>
+									<div class="info-wrapper__block">
+										<p>04</p>
+										<p>Best Seller Awards</p>
+									</div>
+								</div>
+
+								<div class="info__author">
+									<div class="info-author__img">
+										<img src="assets/img/qr-code.svg" alt="qr-code" />
+									</div>
+									<div class="info-author__info">
+										<p>John Abraham , Ph.d</p>
+
+										<a href="mailto:johnabraham@gmail.com"
+											>Mail : johnabraham@gmail.com</a
+										>
+										<a href="tel:+21235459000">Phone : (+2) 123 545 9000</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="trusted-best">
+					<div class="container">
+						<h2 class="section__title trusted-best__title wow wow bounceInLeft">
+							Trusted by the Best
+						</h2>
+						<div class="border border-tc"></div>
+						<div class="trusted-best__partners">
+							<div class="partner">
+								<img src="assets/img/amazen-corp.svg" alt="amazen-corp" />
+								<h4 class="partner__title">Amazen Corp</h4>
+								<p class="partner__subtitle">
+									A long established fact that a who looking at its layout.
+								</p>
+							</div>
+							<div class="partner">
+								<img src="assets/img/megan-books.svg" alt="megan-books" />
+								<h4 class="partner__title">Megan Books</h4>
+								<p class="partner__subtitle">
+									A long established fact that a who looking at its layout.
+								</p>
+							</div>
+							<div class="partner">
+								<img src="assets/img/megank.svg" alt="megank" />
+								<h4 class="partner__title">Los Books</h4>
+								<p class="partner__subtitle">
+									A long established fact that a who looking at its layout.
+								</p>
+							</div>
+							<div class="partner">
+								<img src="assets/img/urban-lib.svg" alt="urban-lib" />
+								<h4 class="partner__title">Urban Lib</h4>
+								<p class="partner__subtitle">
+									A long established fact that a who looking at its layout.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Пытался использовать методологию БЭМ -->
+				<section class="book-copy">
+					<div class="container">
+						<div class="book-copy__wrapper">
+							<div class="book-copy__info">
+								<h2 class="section__title book-copy__title wow bounceInLeft">
+									Get Book Copy Today!
+								</h2>
+								<div class="border"></div>
+								<p class="book-copy__subtitle">
+									This the first true value generator on the Internet. It uses
+									alphas dictionary of over 200 Latin words.
+								</p>
+								<button class="btn book-copy__btn">Order Today</button>
+							</div>
+							<div class="book-copy__img">
+								<img src="assets/img/tea-book.png" alt="tea-book" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="what-learn">
+					<div class="container">
+						<h2 class="section__title what-learn__title wow bounceInLeft">
+							What will you learn?
+						</h2>
+						<div class="border"></div>
+						<div class="what-learn__wrapper">
+							<div class="what-learn__info">
+								<div class="what-learn__block">
+									<p>01</p>
+									<p>
+										Use HDFS & Map Reduce for storing & analyzing data at scale.
+									</p>
+								</div>
+								<div class="what-learn__block">
+									<p>02</p>
+									<p>
+										Consume streaming data using Spark Streaming, Flink, and
+										Storm.
+									</p>
+								</div>
+								<div class="what-learn__block">
+									<p>03</p>
+									<p>
+										Choose an appropriate data storage technology for your
+										application
+									</p>
+								</div>
+								<div class="what-learn__block">
+									<p>04</p>
+									<p>
+										Analyze non-relational data using HBase, Cassandra, and
+										MongoDB.
+									</p>
+								</div>
+							</div>
+							<div class="what-learn__img">
+								<img src="assets/img/woman.png" alt="woman" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="includes">
+					<div class="container">
+						<h2 class="section__title includes__title wow bounceInLeft">
+							The Chapter Includes
+						</h2>
+						<div class="border"></div>
+
+						<div class="includes__wrapper">
+							<div class="includes-block">
+								<h3 class="includes-block__title">
+									Chapter- 01 Get Started Intro
+								</h3>
+								<p class="include-block__subtitle">
+									Making this the first true value generator on the Internet. It
+									of over 200 Latin words, combined with a handful.
+								</p>
+								<div class="includes-block__wrapper">
+									<div class="circle"></div>
+									<p><span>Pages :</span> 85pages</p>
+
+									<div class="circle"></div>
+									<p><span>Length :</span> 1 Hour 15 mins</p>
+								</div>
+							</div>
+							<div class="includes-block">
+								<h3 class="includes-block__title">
+									Chapter- 02 Create a Massive Content
+								</h3>
+								<p class="include-block__subtitle">
+									Making this the first true value generator on the Internet. It
+									of over 200 Latin words, combined with a handful.
+								</p>
+								<div class="includes-block__wrapper">
+									<div class="circle"></div>
+									<p><span>Pages :</span> 85pages</p>
+
+									<div class="circle"></div>
+									<p><span>Length :</span> 1 Hour 15 mins</p>
+								</div>
+							</div>
+							<div class="includes-block">
+								<h3 class="includes-block__title">
+									Chapter- 03 Maintaining the Creative Arcs
+								</h3>
+								<p class="include-block__subtitle">
+									Making this the first true value generator on the Internet. It
+									of over 200 Latin words, combined with a handful.
+								</p>
+								<div class="includes-block__wrapper">
+									<div class="circle"></div>
+									<p><span>Pages :</span> 85pages</p>
+
+									<div class="circle"></div>
+									<p><span>Length :</span> 1 Hour 15 mins</p>
+								</div>
+							</div>
+							<div class="includes-block">
+								<h3 class="includes-block__title">
+									Chapter- 04 The Conclusion
+								</h3>
+								<p class="include-block__subtitle">
+									Making this the first true value generator on the Internet. It
+									of over 200 Latin words, combined with a handful.
+								</p>
+								<div class="includes-block__wrapper">
+									<div class="circle"></div>
+									<p><span>Pages :</span> 85pages</p>
+
+									<div class="circle"></div>
+									<p><span>Length :</span> 1 Hour 15 mins</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="includes-bottom">
+							<button class="btn includes__btn" id="popup__btn-ok">
+								Start a 15-Days Free Trail
+							</button>
+							<p>
+								<span>Short description about each chapter</span>
+								<span><a href="#">Have any questions?</a> Contact us</span>
+							</p>
+
+							<div class="popup-2">
+								<div class="popup__wrapper2">
+									<p>Okay!</p>
+									<button class="popup-2__close">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="readers">
+					<div class="container">
+						<div class="readers__wrapper">
+							<div class="readers__info wow bounceInLeft">
+								<h2 class="section__title readers__title">
+									What Readers Say About the Book
+								</h2>
+								<div class="border"></div>
+								<p class="readers__subtitle">
+									If you are going to use a passage of Lorem Ipsum, you need to
+									be sure there isn't anything embarrassing hidden in the middle
+									of text. All the Lorem Ipsum generators.
+								</p>
+								<img src="assets/img/rating.svg" alt="rating" />
+								<span>(4.8/5)</span>
+								<p class="readers__p">Overall Customer Ratings</p>
+							</div>
+
+							<div class="readers-persons">
+								<div class="persons__wrapper">
+									<div class="readers__block">
+										<div class="readers__inner">
+											<img
+												class="readers__icon"
+												src="assets/img/icon1.svg"
+												alt="icon"
+											/>
+											<div class="title-rating">
+												<h4 class="title-rating__title">Martin Philips</h4>
+												<img
+													class="rating"
+													src="assets/img/rating.svg"
+													alt="rating"
+												/>
+											</div>
+										</div>
+										<div class="readers-block__wrapper">
+											<h3 class="readers-block__title">“ Awesome Impact ”</h3>
+											<p class="readers-block__subtitle">
+												All the Lorem Ipsum generators on the Internet tend to
+												repeat willings predefined chunks value.
+											</p>
+										</div>
+									</div>
+
+									<div class="readers__block">
+										<div class="readers__inner">
+											<img
+												class="readers__icon"
+												src="assets/img/icon1.svg"
+												alt="icon"
+											/>
+											<div class="title-rating">
+												<h4 class="title-rating__title">Martin Philips</h4>
+												<img
+													class="rating"
+													src="assets/img/rating.svg"
+													alt="rating"
+												/>
+											</div>
+										</div>
+										<div class="readers-block__wrapper">
+											<h3 class="readers-block__title">“ Awesome Impact ”</h3>
+											<p class="readers-block__subtitle">
+												All the Lorem Ipsum generators on the Internet tend to
+												repeat willings predefined chunks value.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="readers__block">
+									<div class="readers__inner">
+										<img
+											class="readers__icon"
+											src="assets/img/icon1.svg"
+											alt="icon"
+										/>
+										<div class="title-rating">
+											<h4 class="title-rating__title">Martin Philips</h4>
+											<img
+												class="rating"
+												src="assets/img/rating.svg"
+												alt="rating"
+											/>
+										</div>
+									</div>
+									<div class="readers-block__wrapper">
+										<h3 class="readers-block__title">“ Awesome Impact ”</h3>
+										<p class="readers-block__subtitle">
+											All the Lorem Ipsum generators on the Internet tend to
+											repeat willings predefined chunks value.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="resources">
+					<div class="container">
+						<h2 class="section__title resources__title wow bounceInLeft">
+							Articles & Resources
+						</h2>
+						<div class="border"></div>
+						<div class="resources__wrapper">
+							<div
+								class="resources__block wow bounceInLeft"
+								data-wow-delay="0.7s"
+							>
+								<img
+									src="assets/img/woman-book.jpg"
+									alt="Woman reading a book"
+								/>
+								<div class="resources-content">
+									<h2>The energy efficiency offers hydrotherapy or swim</h2>
+									<p>
+										The point of using Lorem Ipsum hiter of that using making it
+										look like others readable will get end.
+									</p>
+									<div class="resources-footer">
+										<a href="#">Read more</a>
+										<span>Author - 23.05.2022</span>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="resources__block wow bounceInLeft"
+								data-wow-delay="1s"
+							>
+								<img
+									src="assets/img/resources-paper.jpg"
+									alt="Woman reading a book"
+								/>
+								<div class="resources-content">
+									<h2>Release of Letraset sheets tools containing passages</h2>
+									<p>
+										The point of using Lorem Ipsum hiter of that using making it
+										look like others readable will get end.
+									</p>
+									<div class="resources-footer">
+										<a href="#">Read more</a>
+										<span>Author - 23.05.2022</span>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="resources__block wow bounceInLeft"
+								data-wow-delay="1.3s"
+							>
+								<img
+									src="assets/img/resources-woman.jpg"
+									alt="Woman reading a book"
+								/>
+								<div class="resources-content">
+									<h2>The energy efficiency offers hydrotherapy or swim</h2>
+									<p>
+										The point of using Lorem Ipsum hiter of that using making it
+										look like others readable will get end.
+									</p>
+									<div class="resources-footer">
+										<a href="#">Read more</a>
+										<span>Author - 23.05.2022</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section-form">
+					<div class="container">
+						<div class="section-form__wrapper wow bounceInLeft">
+							<h2
+								class="section__title form__title wow bounceInLeft"
+								data-wow-delay="0.5s"
+							>
+								Read a free chapter
+							</h2>
+							<div class="border wow bounceInLeft" data-wow-delay="0.8s"></div>
+							<p class="form__subtitle wow bounceInLeft" data-wow-delay="1s">
+								Making this the first true value generator on the Internet. It
+								of over 200 Latin words, combined with a handful.
+							</p>
+							<form class="form" action="#">
+								<input
+									class="wow bounceInLeft"
+									data-wow-delay="1.5s"
+									type="email"
+									placeholder="Your Email id..."
+								/>
+								<button class="btn wow bounceInRight" data-wow-delay="1.5s">
+									Subscribe
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- думаю при адаптиве сделать просто flex-direction column пример min-width 320px экран, и чем больше экран тем больше плиток получается -->
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="logo-socials">
+							<div class="logo">
+								<a href="#!">
+									<img src="assets/img/logo.svg" alt="logo" />
+								</a>
+							</div>
+
+							<div class="socials">
+								<a href="#!" class="socials__link">
+									<img src="assets/img/footer-facebook.svg" alt="facebook" />
+								</a>
+								<a href="#" class="socials__link">
+									<img src="assets/img/footer-twitter.svg" alt="twitter" />
+								</a>
+								<a href="#" class="socials__link">
+									<img src="assets/img/footer-linkedin.svg" alt="linkedIn" />
+								</a>
+								<a href="#" class="socials__link">
+									<img src="assets/img/footer-insta.svg" alt="insta" />
+								</a>
+							</div>
+						</div>
+						<div class="footer__links">
+							<div class="footer-links__explore">
+								<h4 class="links__title">Explore</h4>
+								<ul class="footer__list">
+									<li class="footer__list-item"><a href="#!">Home</a></li>
+									<li class="footer__list-item"><a href="#!">About Us</a></li>
+									<li class="footer__list-item"><a href="#!">Services</a></li>
+									<li class="footer__list-item">
+										<a href="#!">Appointments</a>
+									</li>
+									<li class="footer__list-item"><a href="#!">Blog</a></li>
+									<li class="footer__list-item"><a href="#!">Contact Us</a></li>
+								</ul>
+							</div>
+							<div class="footer-links__utility-pages">
+								<h4 class="links__title">Utility Pages</h4>
+								<ul class="footer__list">
+									<li class="footer__list-item">
+										<a href="#!"> Start here</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#!">Style guide</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#!">404 not found</a>
+									</li>
+									<li class="footer__list-item">
+										<a href="#!">Password protected</a>
+									</li>
+									<li class="footer__list-item"><a href="#!">Licenses</a></li>
+									<li class="footer__list-item"><a href="#!">Changelog</a></li>
+								</ul>
+							</div>
+							<div class="footer-links__keep-touch">
+								<h4 class="links__title">Keep in Touch</h4>
+								<div class="keep-touch__info">
+									<div class="keep-touch-info__titles">
+										<span>Address:</span>
+										<span>Mail:</span>
+										<span>Phone:</span>
+									</div>
+
+									<div class="keep-touch-info__content">
+										<div class="address__wrapper">
+											<span>24A Kingston St, </span>
+											<span> Los Vegas NC 28202, USA.</span>
+										</div>
+										<a href="tel:+221234567900">(+22) 123 - 4567 - 900</a>
+										<a href="tel:+221234567900">(+22) 123 - 4567 - 900</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p>
+							&copy; Drafted by <span>Victorflow</span> - Powered by
+							<span>Webflow</span>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="assets/script/wow.min.js"></script>
+		<script>
+			new WOW().init()
+		</script>
+
+		<script src="assets/script/main.js"></script>
+	</body>
+</html>

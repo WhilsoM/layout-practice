@@ -1,0 +1,154 @@
+.solutions {
+	padding-bottom: 160px;
+	position: relative;
+}
+
+.arrow-down {
+	position: absolute;
+	bottom: -14px;
+	padding-left: 20px;
+}
+
+.info {
+	padding-left: 18px;
+}
+.info > h2 {
+	color: #fff;
+
+	font-size: 40px;
+	font-weight: 600;
+	max-width: 679px;
+	margin-bottom: 35px;
+}
+
+.info > p {
+	color: #fff;
+
+	font-size: 14px;
+	margin-bottom: 61px;
+}
+
+// form
+.form__solutions {
+	background: rgba(0, 0, 0, 0.4);
+	width: 510px;
+
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 100px;
+	right: 350px;
+}
+
+.input-form {
+	padding-left: 24px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+
+	font-size: 14px;
+	line-height: 96.4%; /* 13.496px */
+
+	border-radius: 7px;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	width: 417px;
+
+	&::-webkit-input-placeholder {
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	&::-moz-placeholder {
+		color: rgba(255, 255, 255, 0.7);
+	}
+}
+
+.form__wrapper {
+	padding-top: 49px;
+	padding-left: 39px;
+	padding-bottom: 35px;
+}
+.form__solutions h3 {
+	color: #fff;
+
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 96.4%; /* 24.1px */
+	margin-bottom: 23px;
+}
+.desc__form {
+	color: #fff;
+
+	font-size: 16px;
+	line-height: 96.4%; /* 15.424px */
+	margin-bottom: 29px;
+}
+.form__solutions > p {
+	color: #fff;
+
+	font-size: 16px;
+	line-height: 96.4%; /* 15.424px */
+	margin-bottom: 29px;
+}
+
+#GET-name {
+	margin-bottom: 15px;
+}
+
+#GET-phone {
+	margin-bottom: 58px;
+}
+
+.form-btn {
+	cursor: pointer;
+	font-family: var(--font-inter);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	padding-left: 6px;
+	margin-right: 10px;
+}
+
+#modal {
+	width: 350px;
+	height: 150px;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	z-index: 1000;
+	box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2); /* Тень */
+}
+.modal__wrapper {
+	position: absolute;
+	bottom: 15px;
+	& > button {
+		cursor: pointer;
+		border: 1px solid #000;
+		border-radius: 5px;
+		padding: 10px 15px;
+		margin-left: 219px;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	& > p {
+		margin-bottom: 34px;
+		font-size: 24px;
+		font-weight: 500;
+		color: #000;
+	}
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+}

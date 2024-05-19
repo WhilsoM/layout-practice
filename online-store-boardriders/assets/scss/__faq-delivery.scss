@@ -1,0 +1,32 @@
+.support-center {
+	.container {
+		display: flex;
+	}
+	margin-bottom: 100px;
+	margin-top: 77px;
+}
+
+.support__title {
+	margin-bottom: 17px;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.aside__component {
+	margin-bottom: 15px;
+	color: var(--dark-gray);
+	cursor: pointer;
+}
+.aside__component-active {
+	color: #000;
+	font-weight: 500;
+}
+
+.support-content {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.support__desc {
+	margin-bottom: 20px;
+	font-weight: 500;
+}
