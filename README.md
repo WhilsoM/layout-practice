@@ -7,3 +7,7 @@ Technologies i use:
 2. CSS
 3. JS
 4. SCSS
+
+P.S:
+
+files Desktop.ini if you see, this just icon for folder in OC Win 10
