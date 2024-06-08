@@ -240,7 +240,7 @@ body {
 }
 .power-solutions .solutions-partners {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 34px;
   margin-bottom: 86px;
 }
