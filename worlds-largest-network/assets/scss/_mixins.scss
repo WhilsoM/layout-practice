@@ -1,0 +1,7 @@
+@mixin hoverTrans() {
+	transition: 0.3s opacity linear;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
